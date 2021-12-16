@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="main.css">
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+   <title>Payment page</title>
+   <script src="https://js.stripe.com/v3"></script>
+</head>
+
+<body>
+   <div class="wraper">
+      <div class="conteiner">
+         <div class="header">
+            <h1>Payment for participation</h1>
+         </div>
+         <div class="description">
+            <div class="description-content">
+               <strong>Payment Description:</strong><br>Payment for participation.<br><strong>Amount - _____USD</strong>
+            </div>
+         </div>
+         <div class="prices">
+            <div class="title">Choose the convenient payment method for you:</div>
+            <div class="price-cards">
+               <div class="card">
+                  <p>Visa / Mastercard</p>
+                  <div class="wraper-img"><img src="img/visa.png" alt="Visa / Mastercard"></div>
+                  <p>Bank card</p>
+                  <button class="stripe" id="" role="link" type="button">
+                     Pay Now
+                  </button>
+                  <div id="error-message"></div>
+               </div>
+               <div class="card">
+                  <p>PayPal</p>
+                  <div class="wraper-img"><img src="img/paypal.png" alt="PayPal"></div>
+                  <p>Via PayPal</p>
+                  <a
+                     href="#">Pay Now</a>
+               </div>
+               <div class="card">
+                  <p>Bank Transfer</p>
+                  <div class="wraper-img"><img src="img/bank_transfer.png" alt="Bank Transfer"></div>
+                  <p>Bank transfer</p>
+                  <a href="#">Pay Now</a>
+               </div>
+            </div>
+            <div class="price-alt">
+               If you are not comfortable with any of the provided payment methods, please let us know, and we will send you an alternative payment method.
+            </div>
+         </div>
+      </div>
+      <div class="footer">
+         <div class="footer-content">
+            <strong>Publisher<br>
+               Publisher's Nme<br>
+               </strong><br><br>
+            
+            Tel: +XX XXX XXX XXX<br>
+            Email - example@example.xx<br><br>
+            © 2021 Roman Laputyn
+         </div>
+      </div>
+   </div>
+</body>
+
+</html>
